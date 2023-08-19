@@ -17,4 +17,18 @@ public class Profesor extends Empleado{
 		this.antiguedadDocente = antiguedadDocente;
 	}
 	
+	public Profesor() {
+		this(0,"ninguno");
+	}
+	
+	public Profesor(int antiguedad,String cargo) {
+		this.cargo=cargo;
+		if(antiguedad>0) {
+		this.antiguedadDocente=antiguedad;
+		}
+		else{
+			System.out.println("La antiguedad no es válida. Se pondrá un valor por defecto");
+			this.antiguedadDocente=0;
+		}
+	}
 }
