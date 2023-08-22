@@ -18,12 +18,13 @@ public class Profesor extends Empleado{
 	}
 	
 	public Profesor() {
-		this(0,"ninguno");
+		this("sin nombre",99,0,"ningún cargo");
 	}
 	
-	public Profesor(int antiguedad,String cargo) {
+	public Profesor(String nombre,int edad,int antiguedad,String cargo) {
+		super(nombre,edad);
 		this.cargo=cargo;
-		if(antiguedad>0) {
+		if(antiguedad>=0) {
 		this.antiguedadDocente=antiguedad;
 		}
 		else{
@@ -33,7 +34,7 @@ public class Profesor extends Empleado{
 	}
 	@Override
 	public String toString() {
-		return super.toString() + ",Cargo: "+ cargo +",Antiguedad Docente: "+ antiguedadDocente;
+		return super.toString() + ", Cargo: " + this.cargo +", Antiguedad Docente: " + this.antiguedadDocente;
 	}
 	
 	
