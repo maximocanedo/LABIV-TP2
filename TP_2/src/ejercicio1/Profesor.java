@@ -31,4 +31,10 @@ public class Profesor extends Empleado{
 			this.antiguedadDocente=0;
 		}
 	}
+	@Override
+	public String toString() {
+		return super.toString() + ",Cargo: "+ cargo +",Antiguedad Docente: "+ antiguedadDocente;
+	}
+	
+	
 }

@@ -53,7 +53,7 @@ public class Empleado {
 
 	@Override
 	public String toString() {
-		return "Empleado: " + this.nombre + ", Edad: " + this.edad + ", Legajo: " + this.id;
+		return "ID: " + this.id + ",Nombre: " + this.nombre + ",Edad: " + this.edad;
 	}	
 
 }
