@@ -12,14 +12,20 @@ public class mainEjercicio1_a {
 		listaProfesores.add(new Profesor("Daniel García Márquez",44,22,"Ayudante de Primera Categoría"));
 		listaProfesores.add(new Profesor("Manuel Fontanarrosa",37,9,"Ayudante de Segunda Categoría"));
 		listaProfesores.add(new Profesor("Ignacio Lumiére",38,15,"Titular Ordinario"));
-				
+				 
 		Iterator<Profesor> it = listaProfesores.iterator();
 		
 		while(it.hasNext()) {
 			Profesor profAux = it.next();
 			System.out.println(profAux.toString());
 		}			
-
+		ArrayList<Profesor> dosProfesores= new ArrayList<Profesor>();
+		dosProfesores.add(new Profesor("Fulano Garcia", 44, 12,"Titular Ordinario"));
+		dosProfesores.add(new Profesor("Fulano Garcia", 44, 12,"Titular Ordinario"));
+		
+		if(dosProfesores.get(0).equals(dosProfesores.get(1))) {
+			System.out.println("Es el mismo profesor.");
+		}
 	}
 
 }
