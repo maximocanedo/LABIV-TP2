@@ -1,5 +1,9 @@
 package ejercicio2;
 
-public class ProductoFresco {
+import java.util.*;
 
+public class ProductoFresco {
+	private Date fechaEnvasado;
+	private String paisOrigen;
+	
 }
