@@ -1,5 +1,6 @@
 package ejercicio2;
 
-public class ProductoRefrigerado {
+public class ProductoRefrigerado extends Producto {
 	private int codigoOrganismoSupervisionAlimentaria;
 }
+

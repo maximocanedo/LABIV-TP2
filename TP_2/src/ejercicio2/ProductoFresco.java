@@ -2,7 +2,7 @@ package ejercicio2;
 
 import java.util.*;
 
-public class ProductoFresco {
+public class ProductoFresco extends Producto {
 	private Date fechaEnvasado;
 	private String paisOrigen;
 	
