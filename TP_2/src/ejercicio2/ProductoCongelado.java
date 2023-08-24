@@ -16,4 +16,13 @@ public class ProductoCongelado extends Producto {
 		}
 	}
 	
+	//GETTERS SETTERS
+	public double getTemperaturaRecomendada() {
+		return temperaturaRecomendada;
+	}
+	public void setTemperaturaRecomendada(double temperaturaRecomendada) {
+		this.temperaturaRecomendada = temperaturaRecomendada;
+	}
+	
+	
 }

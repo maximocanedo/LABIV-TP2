@@ -1,6 +1,6 @@
 package ejercicio2;
 
-import java.util.Date;
+//import java.util.Date;
 
 public class ProductoRefrigerado extends Producto {
 	private int codigoOrganismoSupervisionAlimentaria;
@@ -17,5 +17,16 @@ public class ProductoRefrigerado extends Producto {
 				this.codigoOrganismoSupervisionAlimentaria=0;
 			}
 	}
+	
+	
+	//GETTERS SETTERS
+	public int getCodigoOrganismoSupervisionAlimentaria() {
+		return codigoOrganismoSupervisionAlimentaria;
+	}
+	public void setCodigoOrganismoSupervisionAlimentaria(int codigoOrganismoSupervisionAlimentaria) {
+		this.codigoOrganismoSupervisionAlimentaria = codigoOrganismoSupervisionAlimentaria;
+	}
+	
+	
 }
 

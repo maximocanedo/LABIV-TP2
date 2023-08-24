@@ -13,4 +13,22 @@ public class ProductoFresco extends Producto {
 		this.fechaEnvasado=fecha;
 		this.paisOrigen=pais;
 	}
+	
+	
+	
+	//GETTERS SETTERS
+	public Date getFechaEnvasado() {
+		return fechaEnvasado;
+	}
+	public void setFechaEnvasado(Date fechaEnvasado) {
+		this.fechaEnvasado = fechaEnvasado;
+	}
+	public String getPaisOrigen() {
+		return paisOrigen;
+	}
+	public void setPaisOrigen(String paisOrigen) {
+		this.paisOrigen = paisOrigen;
+	}
+	
+	
 }
