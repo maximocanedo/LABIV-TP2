@@ -5,13 +5,12 @@ public class Edif_Oficina implements Edificio {
 	private int Cant_Oficinas;
 
 	public Edif_Oficina() {
-		this.Cant_Oficinas = 1;//Cantidad default
+		this.Cant_Oficinas = 1;
 	}
 	
 	public Edif_Oficina(int cantidad) {
 		this.Cant_Oficinas = cantidad;
 	}
-	
 	
 	@Override
 	public double getSuperficieEdificio() {
@@ -19,8 +18,6 @@ public class Edif_Oficina implements Edificio {
 		return 0;
 	}
 	
-	
-	//GETTERS SETTERS
 	public int getCant_Oficinas() {
 		return Cant_Oficinas;
 	}
@@ -33,6 +30,5 @@ public class Edif_Oficina implements Edificio {
 	public String toString() {
 		return "Este edificio posee "+ Cant_Oficinas + " Oficinas";
 	}
-	
 	
 }
