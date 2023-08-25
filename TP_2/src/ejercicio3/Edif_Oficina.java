@@ -26,7 +26,7 @@ public class Edif_Oficina extends Estructura implements Edificio {
 	}
 
 	public void setCant_Oficinas(int cant_Oficinas) {
-		Cant_Oficinas = cant_Oficinas;
+		Cant_Oficinas = cant_Oficinas >= 0 ? cant_Oficinas : 0;
 	}
 
 	@Override

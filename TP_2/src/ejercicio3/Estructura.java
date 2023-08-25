@@ -20,7 +20,7 @@ public abstract class Estructura {
 	}
 
 	public void setAncho(double ancho) {
-		this.ancho = ancho;
+		this.ancho = ancho >= 0 ? ancho : 0;
 	}
 
 	public double getLargo() {
@@ -28,7 +28,7 @@ public abstract class Estructura {
 	}
 
 	public void setLargo(double largo) {
-		this.largo = largo;
+		this.largo = largo >= 0 ? largo : 0;
 	}
 
 	@Override

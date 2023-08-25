@@ -47,7 +47,7 @@ public class Polideportivo extends Estructura implements InstalacionDeportiva, E
 	}
 
 	public void setTipo(int tipo) {
-		this.tipo = tipo;
+		this.tipo = tipo >= 0 ? tipo : 0;
 	}
 
 	@Override
