@@ -1,21 +1,32 @@
 package ejercicio2;
 
-//import java.util.Date;
+import java.util.*;
 
 public class ProductoRefrigerado extends Producto {
 	private int codigoOrganismoSupervisionAlimentaria;
 	
-	public ProductoRefrigerado(){
-		this(0);
+	public ProductoRefrigerado(int codigo, int lote, Date fv) {
+		super(lote, fv);
+		setCodigoOrganismoSupervisionAlimentaria(codigo);
+		
 	}
-	public ProductoRefrigerado(int codigo){	
-		if(codigo>=0) {
-			this.codigoOrganismoSupervisionAlimentaria=codigo;
-		}
-			else {
-				System.out.println("El codigo no es válido. Se pondrá un valor por defecto");
-				this.codigoOrganismoSupervisionAlimentaria=0;
-			}
+	public ProductoRefrigerado(int codigo, int lote, Calendar fv) {
+		super(lote, fv);
+		setCodigoOrganismoSupervisionAlimentaria(codigo);
+		
+	}
+	public ProductoRefrigerado(int codigo, int lote) {
+		super(lote);
+		setCodigoOrganismoSupervisionAlimentaria(codigo);
+		
+	}
+	public ProductoRefrigerado(int codigo) {
+		super();
+		setCodigoOrganismoSupervisionAlimentaria(codigo);
+	}
+	public ProductoRefrigerado(){
+		super();
+		setCodigoOrganismoSupervisionAlimentaria(0);
 	}
 	
 	
@@ -23,8 +34,8 @@ public class ProductoRefrigerado extends Producto {
 	public int getCodigoOrganismoSupervisionAlimentaria() {
 		return codigoOrganismoSupervisionAlimentaria;
 	}
-	public void setCodigoOrganismoSupervisionAlimentaria(int codigoOrganismoSupervisionAlimentaria) {
-		this.codigoOrganismoSupervisionAlimentaria = codigoOrganismoSupervisionAlimentaria;
+	public void setCodigoOrganismoSupervisionAlimentaria(int codigo) {
+		this.codigoOrganismoSupervisionAlimentaria = codigo >= 0 ? codigo : 0;
 	}
 	
 	

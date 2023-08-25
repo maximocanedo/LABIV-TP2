@@ -5,6 +5,22 @@ public class Producto {
 	private int lote;
 	private Date fechaVencimiento;
 	
+	public Producto(int lote, Date fv) {
+		this.lote = lote;
+		this.fechaVencimiento = fv;
+	}
+	public Producto(int lote, Calendar fv) {
+		this(lote, fv.getTime());
+	}
+	public Producto(int lote) {
+		Calendar fechaActual = Calendar.getInstance();
+        fechaActual.add(Calendar.YEAR, 1);
+        this.lote = lote;
+        this.fechaVencimiento = fechaActual.getTime();
+	}
+	public Producto() {
+		this(0);
+	}
 	
 	//GETTERS SETTERS
 	public int getLote() {
