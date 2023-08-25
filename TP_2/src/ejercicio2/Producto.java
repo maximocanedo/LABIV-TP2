@@ -24,8 +24,7 @@ public class Producto {
 	
 	@Override
 	public String toString() {
-		return "lote [" + lote + "], fecha de Vencimiento " +
-	fechaVencimiento+" ";
+		return "lote [" + lote + "], fecha de Vencimiento " + fechaVencimiento.toString() +" ";
 	}
 	//GETTERS SETTERS
 	public int getLote() {
