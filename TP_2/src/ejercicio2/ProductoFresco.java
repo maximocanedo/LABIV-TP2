@@ -6,6 +6,12 @@ public class ProductoFresco extends Producto {
 	private Date fechaEnvasado;
 	private String paisOrigen;
 	
+	
+	@Override
+	public String toString() {
+		return super.toString()+ " ProductoFresco | fecha Envasado: " + 
+	fechaEnvasado + ", pais Origen: " + paisOrigen;
+	}
 	public ProductoFresco(){
 		this(null,"argentina");
 	}

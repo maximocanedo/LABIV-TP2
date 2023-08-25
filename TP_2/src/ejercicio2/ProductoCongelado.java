@@ -3,6 +3,11 @@ package ejercicio2;
 public class ProductoCongelado extends Producto {
 	private double temperaturaRecomendada;
 	
+	@Override
+	public String toString() {
+		return super.toString() + "ProductoCongelado temperatura Recomendada: " +
+	temperaturaRecomendada ;
+	}
 	public ProductoCongelado(){
 		this(0);
 	}

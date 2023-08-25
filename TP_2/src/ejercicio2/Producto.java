@@ -6,6 +6,11 @@ public class Producto {
 	private Date fechaVencimiento;
 	
 	
+	@Override
+	public String toString() {
+		return "lote [" + lote + "], fecha de Vencimiento " +
+	fechaVencimiento+" ";
+	}
 	//GETTERS SETTERS
 	public int getLote() {
 		return lote;
