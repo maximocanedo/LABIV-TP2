@@ -1,20 +1,17 @@
 package ejercicio3;
 
-public class Edif_Oficina implements Edificio {
+public class Edif_Oficina extends Estructura implements Edificio {
 
 	private int Cant_Oficinas;
-	private double ancho;
-	private double largo;
+	
 
 	public Edif_Oficina() {
-		this.ancho = 40.0;
-		this.largo = 40.0;
+		super();
 		this.Cant_Oficinas = 1;	
 	}
 	
 	public Edif_Oficina(int cantidad,double anc,double larg) {
-		this.ancho = anc;
-		this.largo = larg;
+		super(anc,larg);
 		this.Cant_Oficinas = cantidad;
 	}
 	
@@ -34,24 +31,6 @@ public class Edif_Oficina implements Edificio {
 
 	@Override
 	public String toString() {
-		return "Este edificio posee "+ Cant_Oficinas + " Oficinas, con una superficie de "+ getSuperficieEdificio() +" metros cuadrados";
+		return "Este edificio posee "+ this.Cant_Oficinas+" Oficinas"+ super.toString();
 	}
-
-	public double getAncho() {
-		return ancho;
-	}
-
-	public void setAncho(double ancho) {
-		this.ancho = ancho;
-	}
-
-	public double getLargo() {
-		return largo;
-	}
-
-	public void setLargo(double largo) {
-		this.largo = largo;
-	}
-	
-	
 }
