@@ -8,7 +8,6 @@ public class ProductoRefrigerado extends Producto {
 	public ProductoRefrigerado(int codigo, int lote, Date fv) {
 		super(lote, fv);
 		setCodigoOrganismoSupervisionAlimentaria(codigo);
-		
 	}
 	public ProductoRefrigerado(int codigo, int lote, Calendar fv) {
 		super(lote, fv);
@@ -28,6 +27,7 @@ public class ProductoRefrigerado extends Producto {
 		super();
 		setCodigoOrganismoSupervisionAlimentaria(0);
 	}
+	
 	@Override
 	public String toString() {
 		return  super.toString() +" | ProductoRefrigerado codigo de "

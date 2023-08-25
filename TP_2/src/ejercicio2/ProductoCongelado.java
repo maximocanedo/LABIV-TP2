@@ -1,24 +1,27 @@
 package ejercicio2;
-
+import java.util.*;
 public class ProductoCongelado extends Producto {
 	private double temperaturaRecomendada;
 	
-	@Override
-	public String toString() {
-		return super.toString() + "ProductoCongelado temperatura Recomendada: " +
-	temperaturaRecomendada ;
+	public ProductoCongelado(int temp, int lote, Date fv) {
+		super(lote, fv);
+		setTemperaturaRecomendada(temp);
 	}
-	public ProductoCongelado(){
-		this(0);
+	public ProductoCongelado(int temp, int lote, Calendar fv) {
+		super(lote, fv);
+		setTemperaturaRecomendada(temp);
 	}
-	public ProductoCongelado(int temp){
-		if(temp>=0) {
-		this.temperaturaRecomendada=temp;
+	public ProductoCongelado(int temp, int lote) {
+		super(lote);
+		setTemperaturaRecomendada(temp);
 	}
-		else {
-			System.out.println("La temperatura no es válida. Se pondrá un valor por defecto");
-			this.temperaturaRecomendada=0;
-		}
+	public ProductoCongelado(int temp) {
+		super();
+		setTemperaturaRecomendada(temp);
+	}
+	public ProductoCongelado() {
+		super();
+		setTemperaturaRecomendada(0);
 	}
 	
 	//GETTERS SETTERS
@@ -26,8 +29,12 @@ public class ProductoCongelado extends Producto {
 		return temperaturaRecomendada;
 	}
 	public void setTemperaturaRecomendada(double temperaturaRecomendada) {
-		this.temperaturaRecomendada = temperaturaRecomendada;
+		this.temperaturaRecomendada = temperaturaRecomendada >= 0 ? temperaturaRecomendada : 0;
 	}
-	
+	@Override
+	public String toString() {
+		return super.toString() + " ProductoCongelado temperatura Recomendada: " +
+	temperaturaRecomendada ;
+	}
 	
 }
