@@ -28,7 +28,12 @@ public class ProductoRefrigerado extends Producto {
 		super();
 		setCodigoOrganismoSupervisionAlimentaria(0);
 	}
-	
+	@Override
+	public String toString() {
+		return  super.toString() +" | ProductoRefrigerado codigo de "
+				+ "Organismo de Supervision de Alimentaria: " + 
+				codigoOrganismoSupervisionAlimentaria;
+	}
 	
 	//GETTERS SETTERS
 	public int getCodigoOrganismoSupervisionAlimentaria() {
