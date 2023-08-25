@@ -33,7 +33,7 @@ public abstract class Estructura {
 
 	@Override
 	public String toString() {
-		return "Posee un Ancho de: "+this.ancho +", y un Largo de: "+this.largo;
+		return " Posee un Ancho de: "+this.ancho +", y un Largo de: "+this.largo;
 	}
 	
 	
